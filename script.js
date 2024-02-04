@@ -7,6 +7,8 @@ const noBtn = document.querySelector(".no-btn");
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Yay, see you on the 14th February!";
   img.src = "resources/images/after_question_asked.png";
+  yesBtn.remove();
+  noBtn.remove();
 });
 
 noBtn.addEventListener("mouseover", () => {
